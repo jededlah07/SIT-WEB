@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computadora Simple</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .comp {
+            position: relative;
+            width: 300px;
+            height: 250px;
+        }
+        
+        .monitor {
+            width: 250px;
+            height: 160px;
+            background: #333;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .pantalla {
+            width: 220px;
+            height: 130px;
+            background: #1a5f7a;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            border-radius: 5px;
+        }
+        
+        /* Base */
+        .soporte {
+            width: 40px;
+            height: 40px;
+            background: #444;
+            margin: 0 auto;
+            clip-path: polygon(0 0, 10% 10, 70% 100%, 30% 100%);
+        }
+        
+        /* Soporte */
+        .barra {
+            width: 150px;
+            height: 10px;
+            background: #555;
+            margin: 0 auto;
+        }
+        
+        /* Teclado */
+        .teclado {
+            width: 200px;
+            height: 15px;
+            background: #333;
+            margin: 10px auto 0;
+            border-radius: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="comp">
+        <div class="monitor">
+            <div class="pantalla"></div>
+            </div>
+        <div class="soporte"></div>
+        <div class="barra"></div>
+        <div class="teclado"></div>
+    </div>
+</body>
+</html>

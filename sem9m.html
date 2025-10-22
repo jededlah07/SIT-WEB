@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prac</title>
+    <style>
+         body { height: 100%; margin: 1000; 
+        }
+        .columnas {
+            display: flex;
+            height: 100vh;
+            border: red;
+        }
+
+        .columnas {
+           display: flex;
+           height: 100vh;
+           gap: 50px;
+        }
+
+        .columna {
+            flex: 1px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid red;
+        }
+
+        .columna.left {
+            flex: 1px;
+            background-color: lightpink;
+        }
+
+        .columna.right {
+            flex: 1px;
+            background-color: lightgreen
+        }
+
+        .columna.center {
+            flex: 100px;
+            background-color: yellow;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cuadrado {
+            width: 160px;
+            height: 160px;
+            background: #3498db;
+            border-radius: 10px;
+        }
+
+    </style>
+    <script>
+        function cambiarColor() {
+
+        }
+
+    </script>
+
+</head>
+<body>
+   
+    <div class="columnas">
+        <div class="columna left"></div>
+        <div class="columna center">
+            <div class="cuadrado" aria-hidden="true">
+                 <button onclick="cambiarColor()">cambiar</button>
+                 <button onclick="cambiarColor()">cambiar</button>
+            </div>
+        </div>
+        <div class="columna right"></div>
+    </div>
+</body>
+</html>
